@@ -31,7 +31,7 @@ jobs:
       - name: Create the known hosts
         run: echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
       - name: Setup Python
-        uses: actions/setup-python@v2.2.
+        uses: actions/setup-python@v2.2.2
         with:
           python-version: "3.10.0"
       - name: Install Flask and Pytest
